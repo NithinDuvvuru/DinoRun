@@ -1,0 +1,666 @@
+
+*** Running vivado
+    with args -log basys3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source basys3.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source basys3.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1329.895 ; gain = 0.023 ; free physical = 10080 ; free virtual = 14518
+Command: synth_design -top basys3 -part xc7a35tcpg236-1 -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20804
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2031.648 ; gain = 402.715 ; free physical = 9146 ; free virtual = 13583
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'basys3' [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/basys3.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'clk_100M_to_clk_1k' [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/basys3/clk_100M_to_clk_1k.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'clk_100M_to_clk_1k' (0#1) [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/basys3/clk_100M_to_clk_1k.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'mmcm_100_to_25_175' [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/build/basys3/basys3.runs/synth_1/.Xil/Vivado-20707-BELSPC0013/realtime/mmcm_100_to_25_175_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mmcm_100_to_25_175' (0#1) [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/build/basys3/basys3.runs/synth_1/.Xil/Vivado-20707-BELSPC0013/realtime/mmcm_100_to_25_175_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'synchronizer' [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/basys3/synchronizer.sv:4]
+	Parameter WIDTH bound to: 32'sb00000000000000000000000000000011 
+INFO: [Synth 8-6155] done synthesizing module 'synchronizer' (0#1) [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/basys3/synchronizer.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'synchronizer__parameterized0' [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/basys3/synchronizer.sv:4]
+	Parameter WIDTH bound to: 32'sb00000000000000000000000000000001 
+INFO: [Synth 8-6155] done synthesizing module 'synchronizer__parameterized0' (0#1) [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/basys3/synchronizer.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'dinorun' [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/dinorun.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'lfsr16' [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/lfsr16.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'lfsr16' (0#1) [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/lfsr16.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'bird' [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/objects/bird.sv:1]
+INFO: [Synth 8-6157] synthesizing module '\$add ' [/tools/oss-cad-suite/share/yosys/simlib.v:834]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 8 - type: integer 
+	Parameter B_WIDTH bound to: 1 - type: integer 
+	Parameter Y_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$add ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:834]
+INFO: [Synth 8-6157] synthesizing module '\$add__parameterized0 ' [/tools/oss-cad-suite/share/yosys/simlib.v:834]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 11 - type: integer 
+	Parameter B_WIDTH bound to: 6 - type: integer 
+	Parameter Y_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$add__parameterized0 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:834]
+INFO: [Synth 8-6157] synthesizing module '\$sdffe ' [/tools/oss-cad-suite/share/yosys/simlib.v:2167]
+	Parameter WIDTH bound to: 1 - type: integer 
+	Parameter CLK_POLARITY bound to: 1 - type: integer 
+	Parameter EN_POLARITY bound to: 1 - type: integer 
+	Parameter SRST_POLARITY bound to: 0 - type: integer 
+	Parameter SRST_VALUE bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module '\$sdffe ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:2167]
+INFO: [Synth 8-6157] synthesizing module '\$sdffe__parameterized0 ' [/tools/oss-cad-suite/share/yosys/simlib.v:2167]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter CLK_POLARITY bound to: 1 - type: integer 
+	Parameter EN_POLARITY bound to: 1 - type: integer 
+	Parameter SRST_POLARITY bound to: 0 - type: integer 
+	Parameter SRST_VALUE bound to: 8'b00000000 
+INFO: [Synth 8-6155] done synthesizing module '\$sdffe__parameterized0 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:2167]
+INFO: [Synth 8-6157] synthesizing module '\$sdffe__parameterized1 ' [/tools/oss-cad-suite/share/yosys/simlib.v:2167]
+	Parameter WIDTH bound to: 11 - type: integer 
+	Parameter CLK_POLARITY bound to: 1 - type: integer 
+	Parameter EN_POLARITY bound to: 1 - type: integer 
+	Parameter SRST_POLARITY bound to: 0 - type: integer 
+	Parameter SRST_VALUE bound to: 11'b00000000000 
+INFO: [Synth 8-6155] done synthesizing module '\$sdffe__parameterized1 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:2167]
+INFO: [Synth 8-6157] synthesizing module '\$sdffe__parameterized2 ' [/tools/oss-cad-suite/share/yosys/simlib.v:2167]
+	Parameter WIDTH bound to: 11 - type: integer 
+	Parameter CLK_POLARITY bound to: 1 - type: integer 
+	Parameter EN_POLARITY bound to: 1 - type: integer 
+	Parameter SRST_POLARITY bound to: 0 - type: integer 
+	Parameter SRST_VALUE bound to: 11'b11111010110 
+INFO: [Synth 8-6155] done synthesizing module '\$sdffe__parameterized2 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:2167]
+INFO: [Synth 8-6157] synthesizing module '\$ne ' [/tools/oss-cad-suite/share/yosys/simlib.v:714]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 2 - type: integer 
+	Parameter B_WIDTH bound to: 2 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$ne ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:714]
+INFO: [Synth 8-6157] synthesizing module '\$reduce_and ' [/tools/oss-cad-suite/share/yosys/simlib.v:244]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 2 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$reduce_and ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:244]
+INFO: [Synth 8-6157] synthesizing module '\$reduce_and__parameterized0 ' [/tools/oss-cad-suite/share/yosys/simlib.v:244]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 3 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$reduce_and__parameterized0 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:244]
+INFO: [Synth 8-6157] synthesizing module '\$eq ' [/tools/oss-cad-suite/share/yosys/simlib.v:690]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 8 - type: integer 
+	Parameter B_WIDTH bound to: 3 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$eq ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:690]
+INFO: [Synth 8-6157] synthesizing module '\$ge ' [/tools/oss-cad-suite/share/yosys/simlib.v:786]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 10 - type: integer 
+	Parameter B_WIDTH bound to: 11 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$ge ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:786]
+INFO: [Synth 8-6157] synthesizing module '\$le ' [/tools/oss-cad-suite/share/yosys/simlib.v:666]
+	Parameter A_SIGNED bound to: 1 - type: integer 
+	Parameter B_SIGNED bound to: 1 - type: integer 
+	Parameter A_WIDTH bound to: 11 - type: integer 
+	Parameter B_WIDTH bound to: 7 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$le ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:666]
+INFO: [Synth 8-6157] synthesizing module '\$logic_and ' [/tools/oss-cad-suite/share/yosys/simlib.v:1246]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 1 - type: integer 
+	Parameter B_WIDTH bound to: 1 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$logic_and ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:1246]
+INFO: [Synth 8-6157] synthesizing module '\$logic_not ' [/tools/oss-cad-suite/share/yosys/simlib.v:1225]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 1 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$logic_not ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:1225]
+INFO: [Synth 8-6157] synthesizing module '\$lt ' [/tools/oss-cad-suite/share/yosys/simlib.v:642]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 10 - type: integer 
+	Parameter B_WIDTH bound to: 12 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$lt ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:642]
+INFO: [Synth 8-6157] synthesizing module '\$pmux ' [/tools/oss-cad-suite/share/yosys/simlib.v:1365]
+	Parameter WIDTH bound to: 1 - type: integer 
+	Parameter S_WIDTH bound to: 2 - type: integer 
+WARNING: [Synth 8-153] case item 1'bx will never be executed [/tools/oss-cad-suite/share/yosys/simlib.v:1382]
+WARNING: [Synth 8-153] case item 1'bx will never be executed [/tools/oss-cad-suite/share/yosys/simlib.v:1382]
+INFO: [Synth 8-6155] done synthesizing module '\$pmux ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:1365]
+INFO: [Synth 8-6157] synthesizing module '\$not ' [/tools/oss-cad-suite/share/yosys/simlib.v:42]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 1 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$not ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:42]
+INFO: [Synth 8-6157] synthesizing module '\$mux ' [/tools/oss-cad-suite/share/yosys/simlib.v:1324]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$mux ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:1324]
+INFO: [Synth 8-6157] synthesizing module '\$pmux__parameterized0 ' [/tools/oss-cad-suite/share/yosys/simlib.v:1365]
+	Parameter WIDTH bound to: 11 - type: integer 
+	Parameter S_WIDTH bound to: 4 - type: integer 
+WARNING: [Synth 8-153] case item 1'bx will never be executed [/tools/oss-cad-suite/share/yosys/simlib.v:1382]
+WARNING: [Synth 8-153] case item 1'bx will never be executed [/tools/oss-cad-suite/share/yosys/simlib.v:1382]
+WARNING: [Synth 8-153] case item 1'bx will never be executed [/tools/oss-cad-suite/share/yosys/simlib.v:1382]
+WARNING: [Synth 8-153] case item 1'bx will never be executed [/tools/oss-cad-suite/share/yosys/simlib.v:1382]
+INFO: [Synth 8-6155] done synthesizing module '\$pmux__parameterized0 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:1365]
+INFO: [Synth 8-6157] synthesizing module '\$eq__parameterized0 ' [/tools/oss-cad-suite/share/yosys/simlib.v:690]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 2 - type: integer 
+	Parameter B_WIDTH bound to: 2 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$eq__parameterized0 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:690]
+INFO: [Synth 8-6157] synthesizing module '\$eq__parameterized1 ' [/tools/oss-cad-suite/share/yosys/simlib.v:690]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 2 - type: integer 
+	Parameter B_WIDTH bound to: 1 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$eq__parameterized1 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:690]
+INFO: [Synth 8-6157] synthesizing module '\$logic_not__parameterized0 ' [/tools/oss-cad-suite/share/yosys/simlib.v:1225]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 2 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$logic_not__parameterized0 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:1225]
+INFO: [Synth 8-6157] synthesizing module '\$mux__parameterized0 ' [/tools/oss-cad-suite/share/yosys/simlib.v:1324]
+	Parameter WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$mux__parameterized0 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:1324]
+INFO: [Synth 8-6157] synthesizing module '\$mux__parameterized1 ' [/tools/oss-cad-suite/share/yosys/simlib.v:1324]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$mux__parameterized1 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:1324]
+INFO: [Synth 8-6157] synthesizing module '\$shiftx ' [/tools/oss-cad-suite/share/yosys/simlib.v:502]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 21 - type: integer 
+	Parameter B_WIDTH bound to: 10 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$shiftx ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:502]
+INFO: [Synth 8-6157] synthesizing module '\$sub ' [/tools/oss-cad-suite/share/yosys/simlib.v:858]
+	Parameter A_SIGNED bound to: 1 - type: integer 
+	Parameter B_SIGNED bound to: 1 - type: integer 
+	Parameter A_WIDTH bound to: 11 - type: integer 
+	Parameter B_WIDTH bound to: 5 - type: integer 
+	Parameter Y_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$sub ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:858]
+INFO: [Synth 8-6157] synthesizing module '\$sub__parameterized0 ' [/tools/oss-cad-suite/share/yosys/simlib.v:858]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 10 - type: integer 
+	Parameter B_WIDTH bound to: 11 - type: integer 
+	Parameter Y_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$sub__parameterized0 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:858]
+INFO: [Synth 8-6157] synthesizing module '\$sub__parameterized1 ' [/tools/oss-cad-suite/share/yosys/simlib.v:858]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 5 - type: integer 
+	Parameter B_WIDTH bound to: 10 - type: integer 
+	Parameter Y_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$sub__parameterized1 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:858]
+INFO: [Synth 8-6155] done synthesizing module 'bird' (0#1) [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/objects/bird.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'cactus' [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/objects/cactus.sv:1]
+INFO: [Synth 8-6157] synthesizing module '\$add__parameterized1 ' [/tools/oss-cad-suite/share/yosys/simlib.v:834]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 11 - type: integer 
+	Parameter B_WIDTH bound to: 5 - type: integer 
+	Parameter Y_WIDTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$add__parameterized1 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:834]
+INFO: [Synth 8-6157] synthesizing module '\$sdffe__parameterized3 ' [/tools/oss-cad-suite/share/yosys/simlib.v:2167]
+	Parameter WIDTH bound to: 2 - type: integer 
+	Parameter CLK_POLARITY bound to: 1 - type: integer 
+	Parameter EN_POLARITY bound to: 1 - type: integer 
+	Parameter SRST_POLARITY bound to: 0 - type: integer 
+	Parameter SRST_VALUE bound to: 2'b00 
+INFO: [Synth 8-6155] done synthesizing module '\$sdffe__parameterized3 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:2167]
+INFO: [Synth 8-6157] synthesizing module '\$sdffe__parameterized4 ' [/tools/oss-cad-suite/share/yosys/simlib.v:2167]
+	Parameter WIDTH bound to: 11 - type: integer 
+	Parameter CLK_POLARITY bound to: 1 - type: integer 
+	Parameter EN_POLARITY bound to: 1 - type: integer 
+	Parameter SRST_POLARITY bound to: 0 - type: integer 
+	Parameter SRST_VALUE bound to: 11'b11111100010 
+INFO: [Synth 8-6155] done synthesizing module '\$sdffe__parameterized4 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:2167]
+INFO: [Synth 8-6157] synthesizing module '\$ge__parameterized0 ' [/tools/oss-cad-suite/share/yosys/simlib.v:786]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 10 - type: integer 
+	Parameter B_WIDTH bound to: 9 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$ge__parameterized0 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:786]
+INFO: [Synth 8-6157] synthesizing module '\$le__parameterized0 ' [/tools/oss-cad-suite/share/yosys/simlib.v:666]
+	Parameter A_SIGNED bound to: 1 - type: integer 
+	Parameter B_SIGNED bound to: 1 - type: integer 
+	Parameter A_WIDTH bound to: 11 - type: integer 
+	Parameter B_WIDTH bound to: 6 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$le__parameterized0 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:666]
+INFO: [Synth 8-6157] synthesizing module '\$lt__parameterized0 ' [/tools/oss-cad-suite/share/yosys/simlib.v:642]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 10 - type: integer 
+	Parameter B_WIDTH bound to: 9 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$lt__parameterized0 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:642]
+INFO: [Synth 8-6157] synthesizing module '\$pmux__parameterized1 ' [/tools/oss-cad-suite/share/yosys/simlib.v:1365]
+	Parameter WIDTH bound to: 1 - type: integer 
+	Parameter S_WIDTH bound to: 4 - type: integer 
+WARNING: [Synth 8-153] case item 1'bx will never be executed [/tools/oss-cad-suite/share/yosys/simlib.v:1382]
+WARNING: [Synth 8-153] case item 1'bx will never be executed [/tools/oss-cad-suite/share/yosys/simlib.v:1382]
+WARNING: [Synth 8-153] case item 1'bx will never be executed [/tools/oss-cad-suite/share/yosys/simlib.v:1382]
+WARNING: [Synth 8-153] case item 1'bx will never be executed [/tools/oss-cad-suite/share/yosys/simlib.v:1382]
+INFO: [Synth 8-6155] done synthesizing module '\$pmux__parameterized1 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:1365]
+INFO: [Synth 8-6157] synthesizing module '\$shiftx__parameterized0 ' [/tools/oss-cad-suite/share/yosys/simlib.v:502]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 15 - type: integer 
+	Parameter B_WIDTH bound to: 10 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$shiftx__parameterized0 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:502]
+INFO: [Synth 8-6157] synthesizing module '\$sub__parameterized2 ' [/tools/oss-cad-suite/share/yosys/simlib.v:858]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 4 - type: integer 
+	Parameter B_WIDTH bound to: 10 - type: integer 
+	Parameter Y_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$sub__parameterized2 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:858]
+INFO: [Synth 8-6157] synthesizing module '\$sub__parameterized3 ' [/tools/oss-cad-suite/share/yosys/simlib.v:858]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 10 - type: integer 
+	Parameter B_WIDTH bound to: 9 - type: integer 
+	Parameter Y_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$sub__parameterized3 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:858]
+INFO: [Synth 8-6155] done synthesizing module 'cactus' (0#1) [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/objects/cactus.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'dino' [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/objects/dino.sv:1]
+INFO: [Synth 8-6157] synthesizing module '\$add__parameterized2 ' [/tools/oss-cad-suite/share/yosys/simlib.v:834]
+	Parameter A_SIGNED bound to: 1 - type: integer 
+	Parameter B_SIGNED bound to: 1 - type: integer 
+	Parameter A_WIDTH bound to: 11 - type: integer 
+	Parameter B_WIDTH bound to: 11 - type: integer 
+	Parameter Y_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$add__parameterized2 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:834]
+INFO: [Synth 8-6157] synthesizing module '\$add__parameterized3 ' [/tools/oss-cad-suite/share/yosys/simlib.v:834]
+	Parameter A_SIGNED bound to: 1 - type: integer 
+	Parameter B_SIGNED bound to: 1 - type: integer 
+	Parameter A_WIDTH bound to: 11 - type: integer 
+	Parameter B_WIDTH bound to: 3 - type: integer 
+	Parameter Y_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$add__parameterized3 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:834]
+INFO: [Synth 8-6157] synthesizing module '\$sdffe__parameterized5 ' [/tools/oss-cad-suite/share/yosys/simlib.v:2167]
+	Parameter WIDTH bound to: 11 - type: integer 
+	Parameter CLK_POLARITY bound to: 1 - type: integer 
+	Parameter EN_POLARITY bound to: 1 - type: integer 
+	Parameter SRST_POLARITY bound to: 0 - type: integer 
+	Parameter SRST_VALUE bound to: 11'b00101100101 
+INFO: [Synth 8-6155] done synthesizing module '\$sdffe__parameterized5 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:2167]
+INFO: [Synth 8-6157] synthesizing module '\$eq__parameterized2 ' [/tools/oss-cad-suite/share/yosys/simlib.v:690]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 8 - type: integer 
+	Parameter B_WIDTH bound to: 2 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$eq__parameterized2 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:690]
+INFO: [Synth 8-6157] synthesizing module '\$ge__parameterized1 ' [/tools/oss-cad-suite/share/yosys/simlib.v:786]
+	Parameter A_SIGNED bound to: 1 - type: integer 
+	Parameter B_SIGNED bound to: 1 - type: integer 
+	Parameter A_WIDTH bound to: 11 - type: integer 
+	Parameter B_WIDTH bound to: 10 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$ge__parameterized1 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:786]
+INFO: [Synth 8-6157] synthesizing module '\$ge__parameterized2 ' [/tools/oss-cad-suite/share/yosys/simlib.v:786]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 10 - type: integer 
+	Parameter B_WIDTH bound to: 7 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$ge__parameterized2 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:786]
+INFO: [Synth 8-6157] synthesizing module '\$lt__parameterized1 ' [/tools/oss-cad-suite/share/yosys/simlib.v:642]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 10 - type: integer 
+	Parameter B_WIDTH bound to: 8 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$lt__parameterized1 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:642]
+INFO: [Synth 8-6157] synthesizing module '\$shiftx__parameterized1 ' [/tools/oss-cad-suite/share/yosys/simlib.v:502]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 58 - type: integer 
+	Parameter B_WIDTH bound to: 10 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$shiftx__parameterized1 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:502]
+INFO: [Synth 8-6157] synthesizing module '\$sub__parameterized4 ' [/tools/oss-cad-suite/share/yosys/simlib.v:858]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 10 - type: integer 
+	Parameter B_WIDTH bound to: 7 - type: integer 
+	Parameter Y_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$sub__parameterized4 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:858]
+INFO: [Synth 8-6157] synthesizing module '\$sub__parameterized5 ' [/tools/oss-cad-suite/share/yosys/simlib.v:858]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 6 - type: integer 
+	Parameter B_WIDTH bound to: 10 - type: integer 
+	Parameter Y_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$sub__parameterized5 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:858]
+INFO: [Synth 8-6157] synthesizing module '\$mux__parameterized2 ' [/tools/oss-cad-suite/share/yosys/simlib.v:1324]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$mux__parameterized2 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:1324]
+INFO: [Synth 8-6155] done synthesizing module 'dino' (0#1) [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/objects/dino.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'title' [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/objects/title.sv:1]
+INFO: [Synth 8-6157] synthesizing module '\$div ' [/tools/oss-cad-suite/share/yosys/simlib.v:1062]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 32 - type: integer 
+	Parameter B_WIDTH bound to: 4 - type: integer 
+	Parameter Y_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$div ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:1062]
+INFO: [Synth 8-6157] synthesizing module '\$ge__parameterized3 ' [/tools/oss-cad-suite/share/yosys/simlib.v:786]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 10 - type: integer 
+	Parameter B_WIDTH bound to: 4 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$ge__parameterized3 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:786]
+INFO: [Synth 8-6157] synthesizing module '\$lt__parameterized2 ' [/tools/oss-cad-suite/share/yosys/simlib.v:642]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 10 - type: integer 
+	Parameter B_WIDTH bound to: 10 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$lt__parameterized2 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:642]
+INFO: [Synth 8-6157] synthesizing module '\$shiftx__parameterized2 ' [/tools/oss-cad-suite/share/yosys/simlib.v:502]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 47 - type: integer 
+	Parameter B_WIDTH bound to: 10 - type: integer 
+	Parameter Y_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$shiftx__parameterized2 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:502]
+INFO: [Synth 8-6157] synthesizing module '\$sub__parameterized6 ' [/tools/oss-cad-suite/share/yosys/simlib.v:858]
+	Parameter A_SIGNED bound to: 0 - type: integer 
+	Parameter B_SIGNED bound to: 0 - type: integer 
+	Parameter A_WIDTH bound to: 10 - type: integer 
+	Parameter B_WIDTH bound to: 4 - type: integer 
+	Parameter Y_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module '\$sub__parameterized6 ' (0#1) [/tools/oss-cad-suite/share/yosys/simlib.v:858]
+INFO: [Synth 8-6155] done synthesizing module 'title' (0#1) [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/objects/title.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'edge_detector' [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/edge_detector.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'edge_detector' (0#1) [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/edge_detector.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'score_counter' [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/score_counter.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'score_counter' (0#1) [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/score_counter.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'vga_timer' [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/vga_timer.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'vga_timer' (0#1) [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/vga_timer.sv:6]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/dinorun.sv:248]
+INFO: [Synth 8-6155] done synthesizing module 'dinorun' (0#1) [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/dinorun.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'basys3_7seg_driver' [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/basys3/basys3_7seg_driver.sv:6]
+INFO: [Synth 8-226] default block is never used [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/basys3/basys3_7seg_driver.sv:70]
+INFO: [Synth 8-6157] synthesizing module 'hex7seg' [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/basys3/hex7seg.sv:6]
+INFO: [Synth 8-226] default block is never used [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/basys3/hex7seg.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'hex7seg' (0#1) [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/basys3/hex7seg.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'basys3_7seg_driver' (0#1) [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/basys3/basys3_7seg_driver.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'basys3' (0#1) [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/basys3.sv:4]
+WARNING: [Synth 8-6014] Unused sequential element vga_blue_o_reg was removed.  [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/dinorun.sv:135]
+WARNING: [Synth 8-6014] Unused sequential element vga_green_o_reg was removed.  [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/rtl/dinorun.sv:136]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2112.617 ; gain = 483.684 ; free physical = 9041 ; free virtual = 13480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2127.461 ; gain = 498.527 ; free physical = 9040 ; free virtual = 13479
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2127.461 ; gain = 498.527 ; free physical = 9040 ; free virtual = 13479
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2127.461 ; gain = 0.000 ; free physical = 9040 ; free virtual = 13479
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/build/basys3/basys3.gen/sources_1/ip/mmcm_100_to_25_175/mmcm_100_to_25_175/mmcm_100_to_25_175_in_context.xdc] for cell 'mmcm_100_to_25_175'
+Finished Parsing XDC File [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/build/basys3/basys3.gen/sources_1/ip/mmcm_100_to_25_175/mmcm_100_to_25_175/mmcm_100_to_25_175_in_context.xdc] for cell 'mmcm_100_to_25_175'
+Parsing XDC File [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/Basys3_Master.xdc:69]
+Finished Parsing XDC File [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/Basys3_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/Basys3_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/basys3_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/basys3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/constraints.xdc]
+Finished Parsing XDC File [/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2243.195 ; gain = 0.000 ; free physical = 9027 ; free virtual = 13465
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2243.230 ; gain = 0.000 ; free physical = 9026 ; free virtual = 13465
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2243.230 ; gain = 614.297 ; free physical = 9015 ; free virtual = 13454
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2243.230 ; gain = 614.297 ; free physical = 9015 ; free virtual = 13454
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100. (constraint file  /home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/build/basys3/basys3.gen/sources_1/ip/mmcm_100_to_25_175/mmcm_100_to_25_175/mmcm_100_to_25_175_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100. (constraint file  /home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/build/basys3/basys3.gen/sources_1/ip/mmcm_100_to_25_175/mmcm_100_to_25_175/mmcm_100_to_25_175_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for mmcm_100_to_25_175. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2243.230 ; gain = 614.297 ; free physical = 9015 ; free virtual = 13454
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_q_reg' in module 'dinorun'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            TITLE_SCREEN |                              001 |                               00
+                 RUNNING |                              100 |                               01
+               COLLISION |                              010 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_q_reg' using encoding 'one-hot' in module 'dinorun'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2243.230 ; gain = 614.297 ; free physical = 9013 ; free virtual = 13453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   18 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 6     
+	   3 Input   12 Bit       Adders := 6     
+	   3 Input   11 Bit       Adders := 7     
+	   2 Input   11 Bit       Adders := 2     
+	   3 Input   10 Bit       Adders := 5     
+	   2 Input   10 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 5     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 7     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	  44 Input   58 Bit        Muxes := 4     
+	   8 Input   47 Bit        Muxes := 1     
+	  19 Input   21 Bit        Muxes := 2     
+	  34 Input   15 Bit        Muxes := 4     
+	   2 Input   11 Bit        Muxes := 18    
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 5     
+	   5 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 22    
+	   3 Input    1 Bit        Muxes := 4     
+	  16 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2243.230 ; gain = 614.297 ; free physical = 8990 ; free virtual = 13434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+----------------+---------------+----------------+
+|Module Name | RTL Object     | Depth x Width | Implemented As | 
++------------+----------------+---------------+----------------+
+|bird        | BIRD_UP        | 32x18         | LUT            | 
+|dino        | DINO_DOWNRIGHT | 64x23         | LUT            | 
+|dino        | DINO_DOWNLEFT  | 64x24         | LUT            | 
+|dino        | p_0_out        | 64x24         | LUT            | 
++------------+----------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'clk_100'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_100M_to_clk_1k/clk_1k_o' to pin 'clk_100M_to_clk_1k/clk_q_reg/Q'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'clk_100M_to_clk_1k/clk_100M_i' to 'game_synchronizer/clk_target_q2_reg/C'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2243.230 ; gain = 614.297 ; free physical = 8988 ; free virtual = 13432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2243.230 ; gain = 614.297 ; free physical = 8988 ; free virtual = 13432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2243.230 ; gain = 614.297 ; free physical = 8988 ; free virtual = 13432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2243.230 ; gain = 614.297 ; free physical = 8987 ; free virtual = 13432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2243.230 ; gain = 614.297 ; free physical = 8987 ; free virtual = 13432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2243.230 ; gain = 614.297 ; free physical = 8987 ; free virtual = 13432
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |mmcm_100_to_25_175 |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |mmcm_100_to_25 |     1|
+|2     |CARRY4         |   107|
+|3     |LUT1           |   109|
+|4     |LUT2           |   317|
+|5     |LUT3           |   111|
+|6     |LUT4           |   152|
+|7     |LUT5           |   123|
+|8     |LUT6           |   170|
+|9     |MUXF7          |    31|
+|10    |MUXF8          |     7|
+|11    |FDRE           |   149|
+|12    |FDSE           |    29|
+|13    |IBUF           |     4|
+|14    |OBUF           |    25|
++------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2243.230 ; gain = 614.297 ; free physical = 8987 ; free virtual = 13432
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2243.230 ; gain = 498.527 ; free physical = 8987 ; free virtual = 13432
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2243.230 ; gain = 614.297 ; free physical = 8987 ; free virtual = 13432
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2243.230 ; gain = 0.000 ; free physical = 9268 ; free virtual = 13713
+INFO: [Netlist 29-17] Analyzing 145 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2243.230 ; gain = 0.000 ; free physical = 9273 ; free virtual = 13718
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 6cd549b
+INFO: [Common 17-83] Releasing license: Synthesis
+164 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:29 . Memory (MB): peak = 2243.230 ; gain = 913.336 ; free physical = 9273 ; free virtual = 13718
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1763.791; main = 1435.276; forked = 354.803
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3224.730; main = 2243.199; forked = 981.531
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2267.207 ; gain = 0.000 ; free physical = 9273 ; free virtual = 13718
+INFO: [Common 17-1381] The checkpoint '/home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/build/basys3/basys3.runs/synth_1/basys3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file basys3_utilization_synth.rpt -pb basys3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  8 14:30:51 2024...

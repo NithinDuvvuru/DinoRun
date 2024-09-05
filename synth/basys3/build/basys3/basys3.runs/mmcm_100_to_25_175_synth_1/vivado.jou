@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Aug  8 14:29:29 2024
+# Process ID: 20523
+# Current directory: /home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/build/basys3/basys3.runs/mmcm_100_to_25_175_synth_1
+# Command line: vivado -log mmcm_100_to_25_175.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mmcm_100_to_25_175.tcl
+# Log file: /home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/build/basys3/basys3.runs/mmcm_100_to_25_175_synth_1/mmcm_100_to_25_175.vds
+# Journal file: /home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/build/basys3/basys3.runs/mmcm_100_to_25_175_synth_1/vivado.jou
+# Running On: BELSPC0013, OS: Linux, CPU Frequency: 3495.691 MHz, CPU Physical cores: 4, Host memory: 16618 MB
+#-----------------------------------------------------------
+source mmcm_100_to_25_175.tcl -notrace

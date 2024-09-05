@@ -1,0 +1,97 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Thu Aug  8 14:31:35 2024
+| Host         : BELSPC0013 running 64-bit Ubuntu 22.04.4 LTS
+| Command      : report_control_sets -verbose -file basys3_control_sets_placed.rpt
+| Design       : basys3
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    19 |
+|    Minimum number of control sets                        |    19 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    91 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    19 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              28 |           15 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              67 |           23 |
+| Yes          | No                    | No                     |               3 |            3 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              91 |           24 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------+--------------------------------+-------------------------------------------+------------------+----------------+--------------+
+|             Clock Signal            |          Enable Signal         |              Set/Reset Signal             | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------+--------------------------------+-------------------------------------------+------------------+----------------+--------------+
+|  clk_100_IBUF_BUFG                  | game_synchronizer/p_3_out[1]   |                                           |                1 |              1 |         1.00 |
+|  clk_100_IBUF_BUFG                  | game_synchronizer/p_3_out[0]   |                                           |                1 |              1 |         1.00 |
+|  clk_100_IBUF_BUFG                  | game_synchronizer/p_3_out[2]   |                                           |                1 |              1 |         1.00 |
+|  clk_100M_to_clk_1k/clk_1k_o        |                                |                                           |                1 |              2 |         2.00 |
+|  mmcm_100_to_25_175/inst/clk_25_175 | dinorun/score_counter/digit3_q | dinorun/lsfr_reset                        |                2 |              4 |         2.00 |
+|  mmcm_100_to_25_175/inst/clk_25_175 | dinorun/score_en               | dinorun/score_counter/digit0_q[3]_i_1_n_0 |                2 |              4 |         2.00 |
+|  mmcm_100_to_25_175/inst/clk_25_175 | dinorun/score_en               | dinorun/lsfr_reset                        |                2 |              8 |         4.00 |
+|  clk_100_IBUF_BUFG                  |                                |                                           |                5 |              9 |         1.80 |
+|  mmcm_100_to_25_175/inst/clk_25_175 | dinorun/cactus/_32_/Y[0]       | dinorun/lsfr_reset                        |                2 |              9 |         4.50 |
+|  mmcm_100_to_25_175/inst/clk_25_175 | dinorun/bird2/_42_/Y[0]        | dinorun/lsfr_reset                        |                2 |             10 |         5.00 |
+|  mmcm_100_to_25_175/inst/clk_25_175 |                                | dinorun/vga_timer/h_q[9]_i_1_n_0          |                3 |             10 |         3.33 |
+|  mmcm_100_to_25_175/inst/clk_25_175 | dinorun/bird/_42_/Y[0]         | dinorun/lsfr_reset                        |                2 |             10 |         5.00 |
+|  mmcm_100_to_25_175/inst/clk_25_175 |                                | synchronizer_25_175/sync_data_o[0]        |                6 |             11 |         1.83 |
+|  mmcm_100_to_25_175/inst/clk_25_175 |                                | dinorun/vga_red_o[3]_i_1_n_0              |                3 |             12 |         4.00 |
+|  mmcm_100_to_25_175/inst/clk_25_175 |                                | dinorun/lsfr_reset                        |                5 |             16 |         3.20 |
+|  mmcm_100_to_25_175/inst/clk_25_175 |                                |                                           |                9 |             17 |         1.89 |
+|  clk_100_IBUF_BUFG                  |                                | clk_100M_to_clk_1k/p_0_in                 |                6 |             18 |         3.00 |
+|  mmcm_100_to_25_175/inst/clk_25_175 | dinorun/dino/_49_/Y[0]         | dinorun/lsfr_reset                        |                9 |             22 |         2.44 |
+|  mmcm_100_to_25_175/inst/clk_25_175 | dinorun/nextframe_bird         | dinorun/lsfr_reset                        |                3 |             24 |         8.00 |
++-------------------------------------+--------------------------------+-------------------------------------------+------------------+----------------+--------------+
+
+

@@ -1,0 +1,15 @@
++===============================+===============================+=========================================+
+| Launch Setup Clock            | Launch Hold Clock             | Pin                                     |
++===============================+===============================+=========================================+
+| clk_100                       | clk_25_175_mmcm_100_to_25_175 | dinorun/FSM_onehot_state_q_reg[2]/D     |
+| clk_100                       | clk_25_175_mmcm_100_to_25_175 | dinorun/FSM_onehot_state_q_reg[1]/D     |
+| clk_100                       | clk_25_175_mmcm_100_to_25_175 | dinorun/hit_q_reg/D                     |
+| clk_100                       | clk_25_175_mmcm_100_to_25_175 | dinorun/bird/_37_/Q_reg[4]/D            |
+| clk_100                       | clk_25_175_mmcm_100_to_25_175 | dinorun/bird/_37_/Q_reg[6]/D            |
+| clk_100                       | clk_25_175_mmcm_100_to_25_175 | dinorun/bird2/_37_/Q_reg[4]/D           |
+| clk_100                       | clk_25_175_mmcm_100_to_25_175 | dinorun/cactus/_28_/Q_reg[0]/D          |
+| clk_100                       | clk_25_175_mmcm_100_to_25_175 | dinorun/dino/dino_left_q_reg/Q_reg[0]/D |
+| clk_100                       | clk_25_175_mmcm_100_to_25_175 | dinorun/bird2/_37_/Q_reg[6]/D           |
+| clk_25_175_mmcm_100_to_25_175 | clk_25_175_mmcm_100_to_25_175 | game_synchronizer/clk_target_q1_reg/D   |
+| clk_25_175_mmcm_100_to_25_175 | clk_25_175_mmcm_100_to_25_175 | synchronizer_25_175/clk_target_q1_reg/D |
++-------------------------------+-------------------------------+-----------------------------------------+

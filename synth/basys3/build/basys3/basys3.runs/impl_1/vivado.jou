@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Aug  8 14:32:18 2024
+# Process ID: 23541
+# Current directory: /home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/build/basys3/basys3.runs/impl_1
+# Command line: vivado -log basys3.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source basys3.tcl -notrace
+# Log file: /home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/build/basys3/basys3.runs/impl_1/basys3.vdi
+# Journal file: /home/nduvvuru@ad.crm.ucsc.edu/Downloads/lab5_2024.08.06.18.54-20240808T205129Z-001/lab5_2024.08.06.18.54/starter/synth/basys3/build/basys3/basys3.runs/impl_1/vivado.jou
+# Running On: BELSPC0013, OS: Linux, CPU Frequency: 3596.177 MHz, CPU Physical cores: 4, Host memory: 16618 MB
+#-----------------------------------------------------------
+source basys3.tcl -notrace
